@@ -28,7 +28,7 @@ import {DaiJoin} from "dss/join.sol";
 import {Flapper} from "dss/flap.sol";
 import {Flopper} from "dss/flop.sol";
 import {Flipper} from "dss/flip.sol";
-import {Dai} from "dss/dai.sol";
+import {Csc} from "dss/csc.sol";
 import {End} from "dss/end.sol";
 import {ESM} from "esm/ESM.sol";
 import {Pot} from "dss/pot.sol";
@@ -67,10 +67,10 @@ contract CatFab {
 }
 
 contract DaiFab {
-    function newDai(uint chainId) public returns (Dai dai) {
-        dai = new Dai(chainId);
-        dai.rely(msg.sender);
-        dai.deny(address(this));
+    function newDai(uint chainId) public returns (Csc csc) {
+        csc = new Csc(chainId);
+        csc.rely(msg.sender);
+        csc.deny(address(this));
     }
 }
 
@@ -160,7 +160,7 @@ contract DssDeploy is DSAuth {
     Jug     public jug;
     Vow     public vow;
     Cat     public cat;
-    Dai     public dai;
+    Csc     public dai;
     DaiJoin public daiJoin;
     Flapper public flap;
     Flopper public flop;
