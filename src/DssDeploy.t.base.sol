@@ -232,7 +232,7 @@ contract DssDeployTestBase is DSTest, ProxyActions {
     Cat cat;
     Flapper flap;
     Flopper flop;
-    Dai dai;
+    Csc dai;
     DaiJoin daiJoin;
     Spotter spotter;
     Pot pot;
