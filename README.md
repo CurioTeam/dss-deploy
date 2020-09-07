@@ -1,4 +1,4 @@
-# Multi Collateral Dai Deployment
+# Multi Collateral CSC Deployment
 
 This repository contains a smart contract which deploys the core `dss` contracts and sets up the necessary authorisations between them.
 
